@@ -9,20 +9,11 @@
 
 ## TABLE OF CONTENTS
 
-- [A. MPPGv4 SERVICE](#A.-MPPGv4-SERVICE)
-- [B. MPPG SUPPORTING SERVICES](#B.-MPPG-SUPPORTING-SERVICES)
-- [C. MPPG PORTAL SERVICES](#C.-MPPG-PORTAL-SERVICES)
+- [A. MPPGv4 SERVICE](#A-MPPGv4-SERVICE)
+- [B. MPPG SUPPORTING SERVICES](#B-MPPG-SUPPORTING-SERVICES)
+- [C. MPPG PORTAL SERVICES](#C-MPPG-PORTAL-SERVICES)
 
-## BEFORE YOU BEGIN
-
-To perform this you will need the following:
-- An iOS (iPad or iPhone) device
-- Access to the Apple App Store from the iOS device
-- A MagTek reader that works with the iOS device
-- A card with an MSR stripe
-
-
-## A. MPPGv4 SERVICE ([TOP](#MAGENSA))"
+## A. MPPGv4 SERVICE
 
 - Link: [URL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc)
 - Link: [WSDL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc?WSDL)
@@ -33,7 +24,7 @@ To perform this you will need the following:
 - Link: [MPPGv4 documents and code samples on Github](https://github.com/Magensa/MPPGv4/tree/master)
 
 
-## B. MPPG SUPPORTING SERVICES ([TOP](#MAGENSA))"
+## B. MPPG SUPPORTING SERVICES
 
 - E-wallets
 	- Apple Pay -- NFC taps from devices with Apple Pay are handled by NFC-enabled MagTek readers like any other contactless card
@@ -66,7 +57,7 @@ The following is an outline of how you would integrate TokenExchange Connect wit
 In order to use TokenExchange Connect and MPPG together, your Magensa credentials for TokenExchange and MPPG must be linked by the Magensa support team.  After they are linked, you can use the tokens returned by TokenExchange Connect in your MPPG transactions.
 
 
-## C. MPPG PORTAL SERVICES ([TOP](#MAGENSA))"
+## C. MPPG PORTAL SERVICES
 
  - MPPGv2 Portal Service
 	- Link: [URL for MPPG Web Portal Service v2](https://mppg.magensa.net/v2Portal/MPPGv2PortalService.svc)
