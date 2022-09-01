@@ -32,7 +32,11 @@
 
 - In-app payments
 	- Apple Pay
-	- P/N D998200515: [MPPG v3.0 and v4.0 | PayPal/Venmo API | Developer Program Manual](https://www.magtek.com/content/documentationfiles/d998200515.pdf)
+		- Link: [TokenExchange Connect Payment Request with Apple Pay: React](https://github.com/Magensa/te-connect-react/blob/master/TecPaymentRequestREADME.md)
+		- Link: [TokenExchange Connect Payment Request with Apple Pay: Angular](https://github.com/Magensa/te-connect-ng/blob/master/TecPaymentRequestREADME.md)
+		- Link: [TokenExchange Connect Payment Request with Apple Pay: JavaScript](https://github.com/Magensa/te-connect-js/blob/master/TecPaymentRequestREADME.md)
+	- PayPal/Venmo
+		- P/N D998200515: [MPPG v3.0 and v4.0 | PayPal/Venmo API | Developer Program Manual](https://www.magtek.com/content/documentationfiles/d998200515.pdf)
 
 - Pay request app
 	- P/N D998200529: [Magensa Payment Protection Gateway Versions 3&4 | Payment Request API | Specifications and Integration Guide](https://www.magtek.com/Content/DocumentationFiles/D998200529.pdf)
