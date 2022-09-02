@@ -6,6 +6,10 @@
 | Date        | Author             | Description
 | -----       | -----              | --------
 | 2022/08/31  | Chuck Maggs        | Initial creation of document in MarkDown
+| 2022/08/31  | Chuck Maggs        | Removed unrelated text
+| 2022/09/01  | Chuck Maggs        | Added links for TokenExchange Connect / in-app payments / Apple Pay
+| 2022/09/02  | Chuck Maggs        | Updated Apple Pay information to clearly delineate between NFC/e-wallet, in-app, and web app implementations
+| 2022/--/--  | Chuck Maggs        | -----------------------------
 
 ## TABLE OF CONTENTS
 
@@ -32,16 +36,19 @@
 
 - In-app payments
 	- Apple Pay
+	- PayPal/Venmo
+		- P/N D998200515: [MPPG v3.0 and v4.0 | PayPal/Venmo API | Developer Program Manual](https://www.magtek.com/content/documentationfiles/d998200515.pdf)
+
+- Web app payments
+	- Apple Pay
 		- Link: [TokenExchange Connect Payment Request with Apple Pay: React](https://github.com/Magensa/te-connect-react/blob/master/TecPaymentRequestREADME.md)
 		- Link: [TokenExchange Connect Payment Request with Apple Pay: Angular](https://github.com/Magensa/te-connect-ng/blob/master/TecPaymentRequestREADME.md)
 		- Link: [TokenExchange Connect Payment Request with Apple Pay: JavaScript](https://github.com/Magensa/te-connect-js/blob/master/TecPaymentRequestREADME.md)
-	- PayPal/Venmo
-		- P/N D998200515: [MPPG v3.0 and v4.0 | PayPal/Venmo API | Developer Program Manual](https://www.magtek.com/content/documentationfiles/d998200515.pdf)
 
 - Pay request app
 	- P/N D998200529: [Magensa Payment Protection Gateway Versions 3&4 | Payment Request API | Specifications and Integration Guide](https://www.magtek.com/Content/DocumentationFiles/D998200529.pdf)
 
-- TokenExchange Connect -- TEConnect includes support for web based in-app purchases with Apple Pay</LI></A>
+- TokenExchange Connect
 	- Link: [Github page for TokenExchange Connect](https://github.com/Magensa/te-connect)
 		- Link: [TokenExchange Connect React component](https://github.com/Magensa/te-connect-react)
 		- Link: [TokenExchange Connect Angular component](https://github.com/Magensa/te-connect-ng)
