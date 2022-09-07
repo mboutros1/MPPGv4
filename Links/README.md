@@ -3,7 +3,7 @@
 ## TABLE OF CONTENTS
 
 - [A. MPPGv4 SERVICE](#A-MPPGv4-SERVICE)
-- [B. MPPG SUPPORTING SERVICES](#B-MPPG-SUPPORTING-SERVICES)
+- [B. MPPG AND ALTERNATIVE PAYMENTS](#B-MPPG-AND-ALTERNATIVE-PAYMENTS)
 - [C. MPPG PORTAL SERVICES](#C-MPPG-PORTAL-SERVICES)
 
 ## A. MPPGv4 SERVICE
@@ -17,7 +17,9 @@
 - Link: [MPPGv4 documents and code samples on Github](https://github.com/Magensa/MPPGv4/tree/master)
 
 
-## B. MPPG SUPPORTING SERVICES
+## B. MPPG AND ALTERNATIVE PAYMENTS
+
+- Link: [Alternative Payments Demo - main landing page](https://demo.magensa.net/tec)
 
 - E-wallets
 	- Apple Pay -- NFC taps from devices with Apple Pay are handled by NFC-enabled MagTek readers like any other contactless card
@@ -27,21 +29,25 @@
 	- Apple Pay
 	- PayPal/Venmo
 		- P/N D998200515: [MPPG v3.0 and v4.0 | PayPal/Venmo API | Developer Program Manual](https://www.magtek.com/content/documentationfiles/d998200515.pdf)
+		- Link: [PayPal/Venmo demo page](https://demo.magensa.net/tec/paypal-venmo/paypal-venmo-request)
 
 - Web app payments
 	- Apple Pay
-		- Link: [TokenExchange Connect Payment Request with Apple Pay: React](https://github.com/Magensa/te-connect-react/blob/master/TecPaymentRequestREADME.md)
-		- Link: [TokenExchange Connect Payment Request with Apple Pay: Angular](https://github.com/Magensa/te-connect-ng/blob/master/TecPaymentRequestREADME.md)
-		- Link: [TokenExchange Connect Payment Request with Apple Pay: JavaScript](https://github.com/Magensa/te-connect-js/blob/master/TecPaymentRequestREADME.md)
+		- Link: [Github README: TokenExchange Connect Payment Request with Apple Pay: React](https://github.com/Magensa/te-connect-react/blob/master/TecPaymentRequestREADME.md)
+		- Link: [Github README: TokenExchange Connect Payment Request with Apple Pay: Angular](https://github.com/Magensa/te-connect-ng/blob/master/TecPaymentRequestREADME.md)
+		- Link: [Github README: TokenExchange Connect Payment Request with Apple Pay: JavaScript](https://github.com/Magensa/te-connect-js/blob/master/TecPaymentRequestREADME.md)
+		- Link: [TokenExchange Connect / Apple Pay demo page](https://demo.magensa.net/tec/tec-apple-pay/apple-pay-button)
 
 - Pay request app
 	- P/N D998200529: [Magensa Payment Protection Gateway Versions 3&4 | Payment Request API | Specifications and Integration Guide](https://www.magtek.com/Content/DocumentationFiles/D998200529.pdf)
+	- Link: [Payment Request demo page](https://demo.magensa.net/tec/payment-request/create-new-pr)
 
 - TokenExchange Connect
 	- Link: [Github page for TokenExchange Connect](https://github.com/Magensa/te-connect)
-		- Link: [TokenExchange Connect React component](https://github.com/Magensa/te-connect-react)
-		- Link: [TokenExchange Connect Angular component](https://github.com/Magensa/te-connect-ng)
-		- Link: [TokenExchange Connect JavaScript component](https://github.com/Magensa/te-connect-js)
+		- Link: [Github README: TokenExchange Connect React component](https://github.com/Magensa/te-connect-react)
+		- Link: [Github README: TokenExchange Connect Angular component](https://github.com/Magensa/te-connect-ng)
+		- Link: [Github README: TokenExchange Connect JavaScript component](https://github.com/Magensa/te-connect-js)
+	- Link: [TokenExchange Connect demo page](https://demo.magensa.net/tec/tec-mppg/token-exchange-form)
 
 The following is an outline of how you would integrate TokenExchange Connect with your MPPG implementation …
 
