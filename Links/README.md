@@ -1,15 +1,4 @@
-# MAGENSA:
 # MPPGv4 REFERENCE LINKS
-
-## REVISION HISTORY
-
-| Date        | Author             | Description
-| -----       | -----              | --------
-| 2022/08/31  | Chuck Maggs        | Initial creation of document in MarkDown
-| 2022/08/31  | Chuck Maggs        | Removed unrelated text
-| 2022/09/01  | Chuck Maggs        | Added links for TokenExchange Connect / in-app payments / Apple Pay
-| 2022/09/02  | Chuck Maggs        | Updated Apple Pay information to clearly delineate between NFC/e-wallet, in-app, and web app implementations
-| 2022/--/--  | Chuck Maggs        | -----------------------------
 
 ## TABLE OF CONTENTS
 
@@ -19,12 +8,12 @@
 
 ## A. MPPGv4 SERVICE
 
-- Link: [URL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc)
-- Link: [WSDL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc?WSDL)
-- Link: [JSON help for MPPG web service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc/JSON/help)
 - P/N 998200263: [Magensa Payment Protection Gateway version 4.0 | MPPG 4.0 Operations | Programmer's Reference Manual](https://www.magtek.com/Content/DocumentationFiles/D998200263.pdf)
 - P/N D998200349: [Magensa Payment Protection Gateway (MPPGv4 and v3) | EMV (chip card) Acceptance | Integration Guide](https://www.magtek.com/content/documentationfiles/d998200349.pdf)
 - P/N D998200457: [Sample MPPGv4 XML/SOAP requests](https://www.magtek.com/Content/SoftwarePackages/D998200457.zip)
+- Link: [URL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc)
+- Link: [WSDL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc?WSDL)
+- Link: [JSON help for MPPG web service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc/JSON/help)
 - Link: [MPPGv4 documents and code samples on Github](https://github.com/Magensa/MPPGv4/tree/master)
 
 
