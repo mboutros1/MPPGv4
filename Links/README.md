@@ -8,6 +8,7 @@
 
 ## A. MPPGv4 SERVICE
 
+- P/N D99810044: [Overview: Magensa Payment Protection Gateway Service](https://www.magtek.com/content/documentationfiles/d99810044.pdf)
 - P/N 998200263: [Magensa Payment Protection Gateway version 4.0 | MPPG 4.0 Operations | Programmer's Reference Manual](https://www.magtek.com/Content/DocumentationFiles/D998200263.pdf)
 - P/N D998200349: [Magensa Payment Protection Gateway (MPPGv4 and v3) | EMV (chip card) Acceptance | Integration Guide](https://www.magtek.com/content/documentationfiles/d998200349.pdf)
 - P/N D998200457: [Sample MPPGv4 XML/SOAP requests](https://www.magtek.com/Content/SoftwarePackages/D998200457.zip)
