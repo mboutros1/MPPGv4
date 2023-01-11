@@ -42,7 +42,7 @@
 - Pay request app (payment link for QR code)
 	- P/N D998200529: [Magensa Payment Protection Gateway Versions 3&4 | Payment Request API | Specifications and Integration Guide](https://www.magtek.com/Content/DocumentationFiles/D998200529.pdf)
 	- Link: [Payment Request demo page](https://demo.magensa.net/tec/payment-request/create-new-pr)
-	- Link: [Swagger page for PaymentRequest API Gateway] (https://paymentrequest.magensa.net/swagger/index.html)
+	- Link: [Swagger page for PaymentRequest API Gateway](https://paymentrequest.magensa.net/swagger/index.html)
 	- URL for PaymentRequest API: https://paymentrequest.magensa.net/api/PaymentRequest
 
 - TokenExchange Connect
