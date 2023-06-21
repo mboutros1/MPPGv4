@@ -12,9 +12,10 @@
 - P/N 998200263: [Magensa Payment Protection Gateway version 4.0 | MPPG 4.0 Operations | Programmer's Reference Manual](https://www.magtek.com/Content/DocumentationFiles/D998200263.pdf)
 - P/N D998200349: [Magensa Payment Protection Gateway (MPPGv4 and v3) | EMV (chip card) Acceptance | Integration Guide](https://www.magtek.com/content/documentationfiles/d998200349.pdf)
 - P/N D998200457: [Sample MPPGv4 XML/SOAP requests](https://www.magtek.com/Content/SoftwarePackages/D998200457.zip)
-- Link: [URL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc)
-- Link: [WSDL for MPPG Web Service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc?WSDL)
-- Link: [JSON help for MPPG web service v4](https://mppg.magensa.net/v4/MPPGv4Service.svc/JSON/help)
+- MPPG service links:
+  - Link: [URL for MPPG Web Service v4](https://svc1.magensa.net/MPPGv4/MPPGv4Service.svc)
+  - Link: [WSDL for MPPG Web Service v4](https://svc1.magensa.net/MPPGv4/MPPGv4Service.svc?WSDL)
+  - Link: [JSON help for MPPG web service v4](https://svc1.magensa.net/MPPGv4/MPPGv4Service.svc/JSON/help)
 - Link: [MPPGv4 documents and code samples on Github](https://github.com/Magensa/MPPGv4/tree/master)
 
 
@@ -51,6 +52,7 @@
 		- Link: [Github README: TokenExchange Connect Angular component](https://github.com/Magensa/te-connect-ng)
 		- Link: [Github README: TokenExchange Connect JavaScript component](https://github.com/Magensa/te-connect-js)
 	- Link: [TokenExchange Connect demo page](https://demo.magensa.net/tec/tec-mppg/token-exchange-form)
+	- **NOTE**:  The Github pages for the TokenExchange Connect components include sample code that refers to a parameter for createTEConnect() called either  "__publicKeyGoesHere__" or "__your_public_key_here__".  This is the same parameter that is included in the Magensa account onboarding worksheet and referred to as "Auth Header".  This value is a base64-encoded concatenation of the TokenExchange Connect credentials in the form "<CUSTOMER_CODE>/<USERNAME>:<PASSWORD>".
 
 The following is an outline of how you would integrate TokenExchange Connect with your MPPG implementation …
 
@@ -68,9 +70,13 @@ In order to use TokenExchange Connect and MPPG together, your Magensa credential
 
 ## C. MPPG PORTAL SERVICES
 
- - MPPGv2 Portal Service
-	- Link: [URL for MPPG Web Portal Service v2](https://mppg.magensa.net/v2Portal/MPPGv2PortalService.svc)
+ - MPPGv2 Portal Service API
+	- Link: [URL for MPPG Portal Service v2 (svc1.magensa.net)](https://svc1.magensa.net/MPPGv2Portal/MPPGv2PortalService.svc)
+	- Link: [URL for MPPG Portal Service v2 (mppg.magensa.net)](https://mppg.magensa.net/v2Portal/MPPGv2PortalService.svc)
 	- P/N D998200216: [Magensa Web Services | Portal Service | MPPGv2 Portal Service Programmer's Reference Manual](https://www.magtek.com/content/documentationfiles/d998200216.pdf)
  - Magensa Reseller Portal
+	- Link: [MPPG Reseller Portal](https://reseller.magensa.net/Account/SignIn)
 	- P/N D998200300: [Magensa Reseller Portal | Magensa Web Services | Operation Manual](https://www.magtek.com/content/documentationfiles/d998200300.pdf)
 	- P/N D998200062: [Reseller Account Admin Portal | For Resellers & Magensa Support](https://www.magtek.com/content/documentationfiles/d998200062.pdf)
+ - Magensa Services status page
+	- Link: [URL for StatusPage (magensa.statuspage.io)](https://magensa.statuspage.io/)
