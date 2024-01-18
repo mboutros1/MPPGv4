@@ -87,13 +87,15 @@ In order to use TokenExchange Connect and MPPG together, your Magensa credential
 
 ## C. MPPG PORTAL SERVICES
 
- - MPPGv2 Portal Service API
+- MPPGv2 Portal Service API
   - Link: [URL for MPPG Portal Service v2 (svc1.magensa.net)](https://svc1.magensa.net/MPPGv2Portal/MPPGv2PortalService.svc)
+  - Link: [WSDL for MPPG Portal Service v2 (svc1.magensa.net)](https://svc1.magensa.net/MPPGv2Portal/MPPGv2PortalService.svc?WSDL)
   - Link: [URL for MPPG Portal Service v2 (mppg.magensa.net)](https://mppg.magensa.net/v2Portal/MPPGv2PortalService.svc)
+  - Link: [WSDL for MPPG Portal Service v2 (mppg.magensa.net)](https://mppg.magensa.net/v2Portal/MPPGv2PortalService.svc?WSDL)
   - P/N D998200216: [Magensa Web Services | Portal Service | MPPGv2 Portal Service Programmer's Reference Manual](https://www.magtek.com/content/documentationfiles/d998200216.pdf)
- - Magensa Reseller Portal
+- Magensa Reseller Portal
   - Link: [MPPG Reseller Portal](https://reseller.magensa.net/Account/SignIn)
   - P/N D998200300: [Magensa Reseller Portal | Magensa Web Services | Operation Manual](https://www.magtek.com/content/documentationfiles/d998200300.pdf)
   - P/N D998200062: [Reseller Account Admin Portal | For Resellers & Magensa Support](https://www.magtek.com/content/documentationfiles/d998200062.pdf)
- - Magensa Services status page
+- Magensa Services status page
   - Link: [URL for StatusPage (magensa.statuspage.io)](https://magensa.statuspage.io/)
