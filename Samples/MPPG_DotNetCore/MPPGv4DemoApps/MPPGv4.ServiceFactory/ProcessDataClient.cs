@@ -1,39 +1,38 @@
-﻿using Microsoft.Extensions.Configuration;
- 
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
-using MPPGv4.ServiceFactory.Model;
+using Gaeasoft.Magensa.Processors.Model;
+using Microsoft.Extensions.Configuration;
 
-namespace MPPGv4.ServiceFactory
+namespace Gaeasoft.Magensa.Processors
 {
-    public class ProcessDataClient :IProcessDataClient
-    {
-        private IConfiguration _config;
-        public Uri Host { get; private set; }
-        public string CertificateFileName { get; private set; }
-        public string CertificatePassword { get; private set; }
-        public ProcessDataClient(IConfiguration config)
-        {
-            _config = config;
-            Host = new Uri(_config.GetValue<string>(Constants.MPPGV4SERVICEURL));
-            CertificateFileName = null;
-            CertificatePassword = null;
-        }
-        /// <summary>
-        /// ProcessDataResponseDto process the input request and returns the response
-        /// </summary>
-        /// <param name="processDataRequestDto"></param>
-        /// <returns></returns>
-        public ProcessDataResponseDto ProcessData(ProcessDataRequestDto dto)
-        {
-            var response = new ProcessDataResponseDto();
-            string pageContent = string.Empty;
-            string soapAction = "http://www.magensa.net/MPPGv4/IMPPGv4Service/ProcessData";
+	public class ProcessDataClient : IProcessDataClient
+	{
+		private IConfiguration _config;
+		public Uri Host { get; private set; }
+		public string CertificateFileName { get; private set; }
+		public string CertificatePassword { get; private set; }
+		public ProcessDataClient(IConfiguration config)
+		{
+			_config = config;
+			Host = new Uri(_config.GetValue<string>(Constants.MPPGV4SERVICEURL));
+			CertificateFileName = null;
+			CertificatePassword = null;
+		}
+		/// <summary>
+		/// ProcessDataResponseDto process the input request and returns the response
+		/// </summary>
+		/// <param name="processDataRequestDto"></param>
+		/// <returns></returns>
+		public ProcessDataResponseDto ProcessData(ProcessDataRequestDto dto)
+		{
+			var response = new ProcessDataResponseDto();
+			string pageContent = string.Empty;
+			string soapAction = "http://www.magensa.net/MPPGv4/IMPPGv4Service/ProcessData";
 
-            try
-            {
-                string soapBody = $@"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:mpp=""http://www.magensa.net/MPPGv4/"" xmlns:mpp1=""http://schemas.datacontract.org/2004/07/MPPGv4WS.Core"" xmlns:sys=""http://schemas.datacontract.org/2004/07/System.Collections.Generic"">
+			try
+			{
+				string soapBody = $@"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:mpp=""http://www.magensa.net/MPPGv4/"" xmlns:mpp1=""http://schemas.datacontract.org/2004/07/MPPGv4WS.Core"" xmlns:sys=""http://schemas.datacontract.org/2004/07/System.Collections.Generic"">
 	<soapenv:Header/>
 	<soapenv:Body>
 		<mpp:ProcessData>         
@@ -79,29 +78,29 @@ namespace MPPGv4.ServiceFactory
 	</soapenv:Body>
 </soapenv:Envelope>";
 
-                MagensaSOAPClient soapClient = new MagensaSOAPClient(host: Host, certificateFileName: CertificateFileName, certificatePassword: CertificatePassword);
-                HttpWebResponse webResponse = soapClient.CallWebService(soapAction, soapBody);
-                Stream responseStream = webResponse.GetResponseStream();
-                using (StreamReader sr = new StreamReader(responseStream))
-                {
-                    response.StatusCode = (int)webResponse.StatusCode;
-                    response.PageContent = sr.ReadToEnd();
-                }
-                responseStream.Close();
-                webResponse.Close();
-            }
-            catch (WebException ex)
-            {
-                HttpStatusCode sCode = ((HttpWebResponse)ex.Response).StatusCode;
-                response.StatusCode = (int)sCode;
-                response.PageContent = new StreamReader(ex.Response.GetResponseStream()).ReadToEnd();
-            }
-            catch (Exception ex)
-            {
-                response.StatusCode = null;
-                response.PageContent = ex.Message;
-            }
-            return response;
-        }
-    }
+				MagensaSOAPClient soapClient = new MagensaSOAPClient(host: Host, certificateFileName: CertificateFileName, certificatePassword: CertificatePassword);
+				HttpWebResponse webResponse = soapClient.CallWebService(soapAction, soapBody);
+				Stream responseStream = webResponse.GetResponseStream();
+				using (StreamReader sr = new StreamReader(responseStream))
+				{
+					response.StatusCode = (int)webResponse.StatusCode;
+					response.PageContent = sr.ReadToEnd();
+				}
+				responseStream.Close();
+				webResponse.Close();
+			}
+			catch (WebException ex)
+			{
+				HttpStatusCode sCode = ((HttpWebResponse)ex.Response).StatusCode;
+				response.StatusCode = (int)sCode;
+				response.PageContent = new StreamReader(ex.Response.GetResponseStream()).ReadToEnd();
+			}
+			catch (Exception ex)
+			{
+				response.StatusCode = null;
+				response.PageContent = ex.Message;
+			}
+			return response;
+		}
+	}
 }

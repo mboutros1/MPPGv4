@@ -4,7 +4,7 @@ using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace MPPGv4.ServiceFactory
+namespace Gaeasoft.Magensa.Processors
 {
     internal class MagensaSOAPClient
     {

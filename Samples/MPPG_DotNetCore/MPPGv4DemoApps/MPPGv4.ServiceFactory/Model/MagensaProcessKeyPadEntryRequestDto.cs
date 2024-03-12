@@ -1,4 +1,4 @@
-﻿namespace MPPGv4.ServiceFactory.Model
+﻿namespace Gaeasoft.Magensa.Processors.Model
 {
 	public class ProcessKeyPadEntryRequestDto : BaseMagensaProcessRequest
     { 

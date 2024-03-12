@@ -1,6 +1,4 @@
-﻿
-using MPPGv4.ServiceFactory;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Linq;
@@ -8,7 +6,8 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.Collections.Generic;
-using MPPGv4.ServiceFactory.Model;
+using Gaeasoft.Magensa.Processors;
+using Gaeasoft.Magensa.Processors.Model;
 
 namespace MPPGv4.UIFactory
 {

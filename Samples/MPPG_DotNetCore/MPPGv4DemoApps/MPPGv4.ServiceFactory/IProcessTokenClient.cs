@@ -1,7 +1,7 @@
 ﻿ 
-using MPPGv4.ServiceFactory.Model;
+using Gaeasoft.Magensa.Processors.Model;
 
-namespace MPPGv4.ServiceFactory
+namespace Gaeasoft.Magensa.Processors
 {
     public interface IProcessTokenClient
     {

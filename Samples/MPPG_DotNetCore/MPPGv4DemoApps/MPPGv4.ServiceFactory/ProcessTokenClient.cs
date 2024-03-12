@@ -1,11 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
- 
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
-using MPPGv4.ServiceFactory.Model;
+using Gaeasoft.Magensa.Processors.Model;
+using Microsoft.Extensions.Configuration;
 
-namespace MPPGv4.ServiceFactory
+namespace Gaeasoft.Magensa.Processors
 {
     public class ProcessTokenClient : IProcessTokenClient
     {
