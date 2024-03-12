@@ -1,4 +1,5 @@
-﻿using MPPGv4.Dtos;
+﻿ 
+using MPPGv4.ServiceFactory.Model;
 
 namespace MPPGv4.ServiceFactory
 {

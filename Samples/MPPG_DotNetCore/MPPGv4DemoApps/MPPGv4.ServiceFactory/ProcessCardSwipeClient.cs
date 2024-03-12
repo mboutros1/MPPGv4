@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using MPPGv4.Dtos;
+ 
 using System;
 using System.IO;
 using System.Net;
+using MPPGv4.ServiceFactory.Model;
 
 namespace MPPGv4.ServiceFactory
 {
@@ -65,7 +66,7 @@ namespace MPPGv4.ServiceFactory
                 <sys:value/>
               </sys:KeyValuePairOfstringstring>
             </mpp1:TransactionInputDetails>
-            <mpp1:TransactionType>{dto.TransactionType}</mpp1:TransactionType>
+            <mpp1:TransactionType>{dto.TransactionType.ToString()}</mpp1:TransactionType>
           </mpp1:TransactionInput>
         </mpp1:ProcessCardSwipeRequest>
       </mpp:ProcessCardSwipeRequests>

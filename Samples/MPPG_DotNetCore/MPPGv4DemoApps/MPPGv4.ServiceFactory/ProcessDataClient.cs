@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using MPPGv4.Dtos;
+ 
 using System;
 using System.IO;
 using System.Net;
+using MPPGv4.ServiceFactory.Model;
 
 namespace MPPGv4.ServiceFactory
 {
